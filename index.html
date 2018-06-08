@@ -1,36 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Online Biology Tutor</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Online Biology Tutor</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap4/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/sidebarMenu.css" rel="stylesheet">
+  
 </head>
 <body>
 
-<!-- use for navigation -->
-<a href="index.html">Home</a>
-<a href="unit1.html">Unit 1</a>
-<a href="unit2.html">Unit 2</a>
-<a href="unit3.html">Unit 3</a>
-<a href="unit4.html">Unit 4</a>
-<a href="unit5.html">Unit 5</a>
-<a href="links.html">Links</a>
+  <div id="wrapper">
+          <!-- Sidebar Navigation-->
+      <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+              <li class="sidebar-brand">
+                  <a href="index.html">Home</a>
+              </li>
+              <li>
+                  <a href="unit1.html">Unit 1</a>
+              </li>
+              <li>
+                  <a href="unit2.html">Unit 2</a>
+              </li>
+              <li>
+                  <a href="unit3.html">Unit 3</a>
+              </li>
+              <li>
+                  <a href="unit4.html">Unit 4</a>
+              </li>
+              <li>
+                 <a href="unit5.html">Unit 5</a>
+              </li>
+              <li>
+                  <a href="links.html">Links</a>
+              </li>
+              <li>
+                  <a href="#">Quizzes or something</a>
+              </li>
+          </ul>
+      </div> <!-- .../#sidebar-wrapper -->
+    <!-- content w/ toggle button -->
+      <div id="page-content-wrapper">
+          <div class="container-fluid">
+              <h1>Simple Sidebar</h1>
+              <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+              <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+              <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
+          
+
+              <h2></h2>
+
+              <h3>This website is for use by students who need or want a little extra instruction in the areas of Biology. The units are correlated to the "Science Georgia Standards of Excellence" that are used state-wide in Georgia high schools.</h3>
+              <p>It is recommended that students use this website as a supplement to classroom instruction, not as a substitute for instruction!</p>
+
+              <h2>What You'll Find In This Website:</h2>
+
+              <p>PowerPoint presentations / Video presentations - Each unit has several presentations that contain information that is covered in class. These presentations include links, animations, diagrams, etc. to help students understand the concepts. It is a good idea to watch the presentations before trying the quizzes!</p>
+              <p>Quizzes - There are several short quizzes in each unit, usually after a presentation. Your answers and the correct answers are shown to you but are not recorded or stored. You can take the quizzes as many times as you want and there is no time limit for the quizzes. Remember...these are to help YOU figure out what you know and what you need some help with!</p>
+              <p>Videos - There are some short demonstration videos, with more to be added later. These are also supplemental materials to help students remember key concepts.</p>
+              <p>Practice Tests - These tests are designed to help you on the "real thing". By taking the practice tests you can see what areas you need to work on.</p>
+
+              <p>copyright &copy; 2007
+              No material may be reproduced without written permission</p>
+          </div> <!--... /.container-fluid -->
+      </div> <!-- ... /#page-content-wrapper -->
+  </div> <!-- .../#wrapper -->
 
 
-<h2>Welcome to Online Science Help!</h2>
+ <!-- Bootstrap core JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="bootstrap4/js/bootstrap.bundle.min.js"></script>
 
-<h3>This website is for use by students who need or want a little extra instruction in the areas of Biology. The units are correlated to the "Science Georgia Standards of Excellence" that are used state-wide in Georgia high schools.</h3>
-<p>It is recommended that students use this website as a supplement to classroom instruction, not as a substitute for instruction!</p>
-
-<h2>What You'll Find In This Website:</h2>
-
-<p>PowerPoint presentations / Video presentations - Each unit has several presentations that contain information that is covered in class. These presentations include links, animations, diagrams, etc. to help students understand the concepts. It is a good idea to watch the presentations before trying the quizzes!</p>
-<p>Quizzes - There are several short quizzes in each unit, usually after a presentation. Your answers and the correct answers are shown to you but are not recorded or stored. You can take the quizzes as many times as you want and there is no time limit for the quizzes. Remember...these are to help YOU figure out what you know and what you need some help with!</p>
-<p>Videos - There are some short demonstration videos, with more to be added later. These are also supplemental materials to help students remember key concepts.</p>
-<p>Practice Tests - These tests are designed to help you on the "real thing". By taking the practice tests you can see what areas you need to work on.</p>
-
-<p>copyright &copy; 2007
-No material may be reproduced without written permission</p>
-
-
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
 
 </body>
 </html>
